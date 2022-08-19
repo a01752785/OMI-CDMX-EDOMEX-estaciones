@@ -330,9 +330,9 @@ int main() {
   TestGenerator test_generator(
       /* custom_generator =    */ new EstacionesGenerator,
       /* path =                */ "../input/",
-      /* subtask_name_prefix = */ "sub",
-      /* separator =           */ ".",
-      /* test_name_prefix =    */ "",
+      /* subtask_name_prefix = */ "case",
+      /* separator =           */ "._",
+      /* test_name_prefix =    */ "0",
       /* grouped_cases =       */ false);
 
   // Subtask 1: H <= 2, K = 1
