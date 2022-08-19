@@ -331,7 +331,7 @@ int main() {
       /* custom_generator =    */ new EstacionesGenerator,
       /* path =                */ "../input/",
       /* subtask_name_prefix = */ "case",
-      /* separator =           */ "._",
+      /* separator =           */ "_",
       /* test_name_prefix =    */ "0",
       /* grouped_cases =       */ false);
 
@@ -354,10 +354,10 @@ int main() {
 
   // Subtask 2: N <= 100, K = 1
   SubtaskInfo subtask2(/* name = */ "subtask2",
-                       /* points = */ 2,
-                       /* number_of_tests = */ 20);
+                       /* points = */ 20,
+                       /* number_of_tests = */ 2);
   
-  subtask2.addRangeConstraint(/* variable_name = */ "n",
+  subtask2.addRangeConstraint(/* variable_name = */ "h",
                               /* lower_limit =   */ 90,
                               /* upper_limit =   */ 100);
 
@@ -374,7 +374,7 @@ int main() {
                        /* points = */ 30,
                        /* number_of_tests = */ 3);
   
-  subtask3.addRangeConstraint(/* variable_name = */ "n",
+  subtask3.addRangeConstraint(/* variable_name = */ "h",
                               /* lower_limit =   */ 90,
                               /* upper_limit =   */ 100);
 
