@@ -337,8 +337,8 @@ int main() {
 
   // Subtask 1: H <= 2, K = 1
   SubtaskInfo subtask1(/* name = */ "subtask1",
-                       /* points = */ 20,
-                       /* number_of_tests = */ 2);
+                       /* points = */ 10,
+                       /* number_of_tests = */ 1);
 
   subtask1.addRangeConstraint(/* variable_name = */ "h",
                               /* lower_limit =   */ 2,
@@ -352,25 +352,61 @@ int main() {
                               /* lower_limit =   */ 0,
                               /* upper_limit =   */ 1000);
 
-  // Subtask 2: H, K <= 1000
+  // Subtask 2: N <= 100, K = 1
   SubtaskInfo subtask2(/* name = */ "subtask2",
-                       /* points = */ 80,
-                       /* number_of_tests = */ 8);
-
-  subtask2.addRangeConstraint(/* variable_name = */ "h",
-                              /* lower_limit =   */ 900,
-                              /* upper_limit =   */ 1000);
+                       /* points = */ 2,
+                       /* number_of_tests = */ 20);
+  
+  subtask2.addRangeConstraint(/* variable_name = */ "n",
+                              /* lower_limit =   */ 90,
+                              /* upper_limit =   */ 100);
 
   subtask2.addRangeConstraint(/* variable_name = */ "k",
-                              /* lower_limit =   */ 100,
-                              /* upper_limit =   */ 800);
+                              /* lower_limit =   */ 1,
+                              /* upper_limit =   */ 1);
 
   subtask2.addRangeConstraint(/* variable_name = */ "position_ranges",
                               /* lower_limit =   */ 0,
+                              /* upper_limit =   */ 1000);
+
+  // Subtask 3: N, K <= 100
+  SubtaskInfo subtask3(/* name = */ "subtask3",
+                       /* points = */ 30,
+                       /* number_of_tests = */ 3);
+  
+  subtask3.addRangeConstraint(/* variable_name = */ "n",
+                              /* lower_limit =   */ 90,
+                              /* upper_limit =   */ 100);
+
+  subtask3.addRangeConstraint(/* variable_name = */ "k",
+                              /* lower_limit =   */ 100,
+                              /* upper_limit =   */ 100);
+
+  subtask3.addRangeConstraint(/* variable_name = */ "position_ranges",
+                              /* lower_limit =   */ 50000,
+                              /* upper_limit =   */ 999999);
+
+  // Subtask 4: H, K <= 1000
+  SubtaskInfo subtask4(/* name = */ "subtask4",
+                       /* points = */ 40,
+                       /* number_of_tests = */ 4);
+
+  subtask4.addRangeConstraint(/* variable_name = */ "h",
+                              /* lower_limit =   */ 900,
+                              /* upper_limit =   */ 1000);
+
+  subtask4.addRangeConstraint(/* variable_name = */ "k",
+                              /* lower_limit =   */ 100,
+                              /* upper_limit =   */ 800);
+
+  subtask4.addRangeConstraint(/* variable_name = */ "position_ranges",
+                              /* lower_limit =   */ 50000,
                               /* upper_limit =   */ 1000000);
 
   test_generator.addSubtask(subtask1);
   test_generator.addSubtask(subtask2);
+  test_generator.addSubtask(subtask3);
+  test_generator.addSubtask(subtask4);
 
   // test_generator goes out of scope and generate() is called
   return 0;
