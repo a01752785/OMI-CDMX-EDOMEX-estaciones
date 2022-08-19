@@ -379,8 +379,8 @@ int main() {
                               /* upper_limit =   */ 100);
 
   subtask3.addRangeConstraint(/* variable_name = */ "k",
-                              /* lower_limit =   */ 100,
-                              /* upper_limit =   */ 100);
+                              /* lower_limit =   */ 80,
+                              /* upper_limit =   */ 90);
 
   subtask3.addRangeConstraint(/* variable_name = */ "position_ranges",
                               /* lower_limit =   */ 50000,
